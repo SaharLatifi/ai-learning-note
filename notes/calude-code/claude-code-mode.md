@@ -1,20 +1,20 @@
-## Claude Code Modes
+## 🔄 Claude Code Modes
 
 Press `Shift + Tab` to switch between modes.
 
-### Approval Mode
+### ✅ Approval Mode
 
 Claude asks for permission before editing a file or running a command.
 
-### Auto-Accept Mode
+### ⚡ Auto-Accept Mode
 
 File edits are automatically approved, but commands still require permission.
 
-### Plan Mode
+### 📋 Plan Mode
 
 Claude uses read-only tools to analyze the codebase and create an implementation plan.
 
-Use Plan Mode for:
+Use **Plan Mode** for:
 
 - Complex or multi-step changes
 - Safe code reviews
