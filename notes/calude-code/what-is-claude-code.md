@@ -99,7 +99,7 @@ The key idea is that the LLM is used **in a loop**, with access to tools that al
 
 ### Context Window
 
-The **context window** is essentially the model's working memory during a session.
+The **context window** is essentially the model's ***working memory*** during a session.
 
 It determines how much information Claude can actively consider at one time, such as:
 
@@ -189,9 +189,9 @@ Claude decides which tools to use based on the task and uses their results to de
 
 Claude Code provides different levels of control over the actions it can take:
 
-* **Default:** Asks permission before editing files or running commands.
-* **Auto-accept:** File edits can be accepted automatically, while commands still require approval.
-* **Plan mode:** Uses read-only tools to investigate the codebase and create a plan before making changes.
+- **Default:** Asks permission before editing files or running commands.
+- **Auto-accept:** File edits are approved automatically, while commands still require approval. (Some plans also have a newer "Auto" mode that uses a background check instead of this strict split.)
+- **Plan mode:** Claude reads files and explores the codebase (read-only — no edits), then writes out a plan. Nothing changes until you review and approve that plan.
 
 Permission settings are important because they control how much autonomy the agent has.
 
