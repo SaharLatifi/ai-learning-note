@@ -23,3 +23,14 @@ Use **Plan Mode** for:
 - Complex or multi-step changes
 - Safe code reviews
 - Reviewing the approach before execution
+
+
+*Reference: [Claude Code Full Course: Zero to Pro in One Hour](https://www.youtube.com/watch?v=q4NP2_ROvPU)*
+
+| Mode Name | Can it Edit Code? | Can it Run Bash Scripts? | Who Approves the Action? | Where to Use It |
+|-----------|--------------------|---------------------------|-----------------------------|-------------------|
+| **Plan** | ❌ No | ❌ Only read-only commands | You (via a plan review) | Complex refactoring or code reviews |
+| **Accept Edits** | ✅ Yes (Auto) | ❌ Only basic file commands (`mkdir`, etc.) | You (prompts for any execution) | Standard daily development |
+| **Auto** | ✅ Yes (Auto) | ✅ Yes (Reviewed by Safety AI) | The Chaperone AI Classifier | Autonomous bug hunting or background tasks |
+| **Bypass** | ✅ Yes (Auto) | ✅ Yes (Unrestricted) | Nobody (Instant execution) | Isolated Docker containers or temporary test VMs |
+
