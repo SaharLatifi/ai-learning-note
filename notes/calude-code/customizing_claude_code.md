@@ -4,7 +4,7 @@
 
 The `CLAUDE.md` file provides Claude Code with persistent information about your project.
 
-Claude automatically reads it at the beginning of each session and adds its contents to the context.
+Claude automatically reads it at the beginning of each session and adds its contents to the context. If the CLAUDE.md exists in the workspace, it will be injected in every conversation (at the beginning of the conversation) automatically.
 
 ---
 
